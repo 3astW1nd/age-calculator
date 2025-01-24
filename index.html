@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  
+  <title>Frontend Mentor | Age calculator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+    }
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+  <div id="wrapper">
+
+    <div id="card">
+      <div id="input-data">
+        <div id="day" class="input">
+          <p style="margin: 0;" id="day-label">DAY</p>
+          <input placeholder="DD" type="number" max="31" min="1" id="date-input">
+          <p style="margin: 0; font-style: italic; color: hsl(0, 100%, 67%); font-size: 14px;" id="day-error"></p>
+        </div>
+      
+        <div id="month" class="input">
+          <p style="margin: 0;" id="month-label">MONTH</p>
+          <input placeholder="MM" type="number" max="12" min="1" id="month-input">
+          <p style="margin: 0; font-style: italic; color: hsl(0, 100%, 67%);" id="month-error"></p>
+        </div>
+      
+        <div id="year" class="input">
+          <p style="margin: 0;" id="year-label">YEAR</p>
+          <input placeholder="YYYY" type="number" id="year-input">
+          <p style="margin: 0; font-style: italic; color: hsl(0, 100%, 67%);" id="year-error"></p>
+        </div>
+
+        <div onclick="calcAge()">
+          <image id="down-arrow" src="./assets/images/icon-arrow.svg" alt="down icon"/>
+        </div>
+
+      </div>
+
+      
+    
+      <div id="display">
+        <div id="display-years" class="display-cls">
+          <p id="years">--</p> 
+          <p>years</p>
+        </div>
+        
+        <div id="display-months" class="display-cls">
+          <p id="months">--</p> 
+          <p>months</p>
+        </div>
+        
+        <div id="display-days" class="display-cls">
+          <p id="days">--</p> 
+          <p>days</p>
+        </div>
+      </div>
+    </div>
+    
+    <!-- <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Your Name Here</a>.
+    </div> -->
+
+  </div>
+
+  <script src="index.js">
+
+  </script>
+</body>
+</html>

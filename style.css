@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Overpass:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+html, body {
+    width: 100%;
+    font-family: "Poppins", serif;
+}
+
+
+
+body {
+    margin: 0;
+    height: 100vh;
+}
+
+#wrapper {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+}
+
+
+#card {
+    /* width: 840px;
+    height: 650px; */
+    width: 545px;
+    height: 400px;
+    background-color: #ffffff;
+    padding: 50px;
+    border-radius: 20px;
+    border-bottom-right-radius: 150px;
+}
+
+#input-data {
+    display: flex;
+    gap: 25px;
+    padding-bottom: 35px;
+    border-bottom: 1px solid hsl(0, 0%, 86%);
+    position: relative;
+}
+
+.input {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    letter-spacing: 2px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: hsl(0, 1%, 44%);
+}
+
+input {
+    padding: 15px;
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: hsl(0, 1%, 44%);
+    width: 80px;
+    border: 1px solid hsl(0, 0%, 86%);
+    border-radius: 5px;
+}
+
+#down-arrow {
+    background-color: hsl(259, 100%, 65%);
+    padding: 20px;
+    border-radius: 50px;
+    /* width: 50%; */
+    position: absolute;
+    top: 86px;
+    right: 0px;
+}
+
+#down-arrow:hover {
+    background-color: hsl(0, 0%, 8%);
+    cursor: pointer;
+}
+
+#display {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    line-height: 80px;
+}
+
+.display-cls {
+    display: flex;
+    gap: 10px;
+    font-size: 70px;
+    font-weight: 800;
+    font-style: italic;
+}
+
+.display-cls > p {
+    margin: 0;
+}
+
+#years, #days, #months {
+    letter-spacing: 10px;
+    color: hsl(259, 100%, 65%);
+}
+
+@media only screen and (max-width: 450px) {
+    #card {
+        padding: 6%;
+        height: fit-content;
+    }    
+
+    #down-arrow {
+        padding: 5%;
+        width: 8%;
+        top: 86px;
+        right: 126px;
+    }
+
+    #input-data {
+        gap: 20px
+    }
+
+    input {
+        padding: 12% 5%;
+        font-size: 1rem;
+    }
+
+    .display-cls > p {
+        font-size: 45px;
+    }
+
+}
